@@ -1,0 +1,110 @@
+.productList{ 
+    width:99%; 
+    height:auto; 
+    min-height: 100px; 
+    /*grid-template-columns: repeat(auto-fill, 200px);*/
+    grid-template-columns: auto auto auto;
+    /*background:#f0f; */
+    margin: 10px auto; 
+    display: grid; 
+    
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+/*
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.item:hover {
+  box-shadow: 0 8px 50px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+
+}
+*/
+.itemImg{ width: 200px; height:230px; margin: 0px auto; display: block; border-radius: 10px;}
+
+.des{padding: 2px 16px; font-size: 14px;}
+
+.productCard {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: [col] 60px [col] 60px [col] 60px [col] 60px  ;
+    grid-template-rows: [row] 50px [row] 250px [row] 50px [row] 40px [row] 40px;
+    /*background-color: #fff;*/
+    color: #ccc;
+    /*border: solid 1px #ddd;*/
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    height: auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 250px;
+    justify-content: center;
+  }
+  
+  .productCard:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  .box {
+    /*background-color: #ccc;*/
+    color: #555;
+    padding: 5px;
+    font-size: 150%;
+
+  }
+  .boxImg {
+    /*background-color: #ddd;*/
+    color: #fff;
+    border-radius: 5px;
+    height: auto;
+  }
+  .head1 {
+    grid-column: col / span 2;
+    grid-row: row ;
+  }
+  .head2 {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+  }
+  .img {
+    grid-column: col / span 4;
+    grid-row: row 2 ;
+    width: 100%;
+  }
+
+  .desc {
+    grid-column: col / span 4;
+    grid-row: row 3;
+    font-size: 18px;
+  }
+  .price {
+    grid-column: col / span 4;
+    grid-row: row 4;
+    font-size: 18px;
+
+  }
+
+  .buttons{
+    grid-column: col / span 4;
+    grid-row: row 5;
+    display: flex;
+    grid-gap: 10px;
+    grid-template-columns: 40% 20% 40%;
+    height: 30px;
+    
+    text-align: center;
+    justify-content: center;
+  }
