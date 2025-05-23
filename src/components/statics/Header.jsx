@@ -11,6 +11,8 @@ const Header = ({cart, delCart}) => {
 	const [cartOpen, SetCartOpen] = useState(false)
 
 	const { isAuthenticated, logout, user } = useAuth()
+	
+	console.log('cart', cart)
 
 	return (
 			<header>
@@ -60,7 +62,7 @@ const Header = ({cart, delCart}) => {
 			    	</Link>			    	
 			    	)}
 				    <div className="link">
-				      <div className="titleHead" onClick={ () => SetCartOpen(true) }>Carrito (0)</div>
+				      <div className="titleHead" onClick={ () => SetCartOpen(true) }>Carrito ({cart.length})</div>
 				      <div className="bar"></div>
 				    </div>
 				  </div>
